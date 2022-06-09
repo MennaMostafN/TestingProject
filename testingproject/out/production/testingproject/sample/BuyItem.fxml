@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BuyItemsController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="701.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/black.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="298.0" layoutY="14.0" text="Buy Items" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="132.0" fitWidth="172.0" layoutX="59.0" layoutY="236.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/EgyptAir.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="132.0" fitWidth="166.0" layoutX="289.0" layoutY="237.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/Amazon.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="123.0" fitWidth="150.0" layoutX="507.0" layoutY="240.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/American%20Eagle.jpg" />
+         </image></ImageView>
+      <RadioButton fx:id="radio1" layoutX="129.0" layoutY="395.0" mnemonicParsing="false" onMousePressed="#pressr1" />
+      <RadioButton fx:id="radio2" layoutX="361.0" layoutY="390.0" mnemonicParsing="false" onMousePressed="#pressr2" />
+      <RadioButton fx:id="radio3" layoutX="570.0" layoutY="386.0" mnemonicParsing="false" onMousePressed="#pressr3" />
+      <Button fx:id="redeem" layoutX="261.0" layoutY="434.0" mnemonicParsing="false" onMousePressed="#pressredeem" prefHeight="26.0" prefWidth="212.0" text="Redeem">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="572.0" layoutY="37.0" text="Points:" textFill="WHITE" />
+      <Label fx:id="p" layoutX="619.0" layoutY="37.0" text="amount" textFill="WHITE" visible="false" />
+      <Button fx:id="showpoints" layoutX="575.0" layoutY="8.0" mnemonicParsing="false" onMousePressed="#pressshowpoints" text="Show points" />
+      <Button fx:id="back3" layoutX="12.0" layoutY="480.0" mnemonicParsing="false" onMousePressed="#pressback3" text="Back" />
+      <Label layoutX="124.0" layoutY="373.0" text="5000" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="356.0" layoutY="369.0" text="1400" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="567.0" layoutY="365.0" text="950" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="45.0" layoutY="195.0" text="Rewards:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="56.0" prefHeight="28.0" prefWidth="150.0" text="Buy Certificates:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="c1" layoutX="78.0" layoutY="109.0" mnemonicParsing="false" onMousePressed="#pressc1" text="20% Certificate" textFill="WHITE" />
+      <RadioButton fx:id="c2" layoutX="78.0" layoutY="149.0" mnemonicParsing="false" onMousePressed="#pressc2" text="18% Certificate" textFill="WHITE" />
+      <TextField fx:id="certificateAmount" layoutX="270.0" layoutY="111.0" prefHeight="26.0" prefWidth="119.0" />
+      <Button fx:id="confirm" layoutX="369.0" layoutY="151.0" mnemonicParsing="false" onMousePressed="#pressconfirm" text="Confirm" />
+   </children>
+</AnchorPane>

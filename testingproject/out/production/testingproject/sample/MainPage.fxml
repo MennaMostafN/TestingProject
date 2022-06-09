@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainPageController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/coins.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buyitems" layoutX="61.0" layoutY="54.0" mnemonicParsing="false" onMousePressed="#pressbuyitems" prefHeight="38.0" prefWidth="250.0" text="Buy Items">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="paybills" layoutX="61.0" layoutY="109.0" mnemonicParsing="false" onMousePressed="#presspaybills" prefHeight="38.0" prefWidth="250.0" text="Pay Bills">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="showstatements" layoutX="61.0" layoutY="167.0" mnemonicParsing="false" onMousePressed="#pressshowstatements" prefHeight="37.0" prefWidth="250.0" text="Show Statements">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="transfermoney" layoutX="61.0" layoutY="218.0" mnemonicParsing="false" onMousePressed="#presstransfermoney" prefHeight="38.0" prefWidth="250.0" text="Transfer Money">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back5" layoutX="7.0" layoutY="474.0" mnemonicParsing="false" onMousePressed="#pressback5" prefHeight="38.0" prefWidth="92.0" text="Back">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

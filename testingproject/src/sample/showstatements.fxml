@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.statementsController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="700.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/black.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="s1" layoutX="58.0" layoutY="152.0" prefHeight="18.0" prefWidth="265.0" text="Statement Saving Account" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="s2" layoutX="58.0" layoutY="227.0" prefHeight="18.0" prefWidth="292.0" text="Credit Card" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="s3" layoutX="58.0" layoutY="300.0" prefHeight="18.0" prefWidth="332.0" text="Saving Certificate" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="293.0" layoutY="15.0" text="Balances" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="Amount1" layoutX="352.0" layoutY="152.0" prefHeight="26.0" prefWidth="46.0" text="4000" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="Amount2" layoutX="356.0" layoutY="227.0" text="3690" textFill="WHITE" visible="falsse">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="Amount3" layoutX="356.0" layoutY="300.0" text="10,000" textFill="WHITE" visible="false">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Button fx:id="showstatements" layoutX="254.0" layoutY="60.0" mnemonicParsing="false" onMousePressed="#pressStatements" prefHeight="26.0" prefWidth="179.0" text="show statements" />
+      <Button fx:id="back7" layoutX="5.0" layoutY="499.0" mnemonicParsing="false" onMousePressed="#pressback7" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PayBillsController">
+   <children>
+      <ImageView fitHeight="520.0" fitWidth="700.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@images/bills.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="313.0" layoutY="147.0" text="Pay From" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="313.0" layoutY="253.0" text="Pay To" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="P1" layoutX="313.0" layoutY="194.0" promptText="Please Select" />
+      <TextField fx:id="P2" layoutX="314.0" layoutY="299.0" promptText="Select Biller" />
+      <Label layoutX="279.0" layoutY="-3.0" prefHeight="42.0" prefWidth="114.0" text="Pay Bills" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirm" layoutX="495.0" layoutY="353.0" mnemonicParsing="false" onMousePressed="#pressbills" prefHeight="26.0" prefWidth="114.0" text="Confirm">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="7.0" layoutY="484.0" mnemonicParsing="false" onMousePressed="#pressback" prefHeight="30.0" prefWidth="56.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="bill1" layoutX="43.0" layoutY="72.0" text="Installment loans" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="bill2" layoutX="43.0" layoutY="101.0" text="Credit card bills" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="bill3" layoutX="44.0" layoutY="130.0" text="Electric bills" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="bill4" layoutX="43.0" layoutY="157.0" text="Cable bills" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="36.0" text="Available Bills:" textFill="#a9cafc">
+         <font>
+            <Font name="Arial Black" size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="r1" layoutX="23.0" layoutY="73.0" mnemonicParsing="false" />
+      <RadioButton fx:id="r2" layoutX="23.0" layoutY="103.0" mnemonicParsing="false" />
+      <RadioButton fx:id="r3" layoutX="23.0" layoutY="132.0" mnemonicParsing="false" />
+      <RadioButton fx:id="r4" layoutX="22.0" layoutY="157.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
